@@ -30,7 +30,7 @@ int main()
         {
             //根据项数值的奇偶判断是否打印" A"
             n = (row - column) * n  / column;
-            if (n % 2 != 0)
+            if (n & 1 == 1)
             {
                 printf(" A");
             }
