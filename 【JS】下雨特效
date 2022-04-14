@@ -19,7 +19,7 @@
 		<script>
 	         
 	        setInterval(function()
-          {
+          	{
 	            //创建rain元素
 	            var rain = document.createElement("div");
 
