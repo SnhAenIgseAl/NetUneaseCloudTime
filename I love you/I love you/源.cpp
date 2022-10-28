@@ -10,7 +10,7 @@
 
 int main()
 {
-	char ILOVEYOU[] = { "I Love You."};
+	char ILOVEYOU[] = { "I love you."};
 	int space;		//空格
 	int m = 3;		//控制打印行数
 	int n = 21;		//控制输出字符
