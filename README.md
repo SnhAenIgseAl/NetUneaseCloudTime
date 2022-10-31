@@ -2,4 +2,4 @@
 现在是，网抑Time  
   
 个人LOGO  
-![image](https://github.com/SnhAenIgseAl/NetUneaseCloudTime/blob/master/images/SnhAenIgseAl.png)
+![image](https://github.com/SnhAenIgseAl/SnhAenIgseAl/blob/master/SnhAenIgseAl.png)
