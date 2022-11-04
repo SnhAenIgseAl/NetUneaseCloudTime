@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+		*{
+			margin:  0;
+			padding: 0;
+		}
+		
+		body{
+			background: #333;
+		}
+		
+	</style>
+</head>
+<body>
+	<script>
+		setInterval(function()
+		{
+			var rain = document.createElement("div");
+			
+			rain.style.position = "fixed";
+			rain.style.height = "150px";
+			rain.style.width = "2px";
+			rain.style.background = "#FFF";
+			rain.style.filter = "blur(1px)";
+			rain.style.top = "0px";
+			rain.style.left = Math.random() * 1920 + "px";
+			rain.style.opacity = parseInt(Math.random() * 10) / 10 + "";
+			
+			document.body.appendChild(rain);
+			
+			var timer = setInterval(function() {
+				var height = parseInt(rain.style.top);
+				var k = 1;
+				k++;
+				
+				rain.style.top = height + 5 * Math.pow(k, 2) + "px";
+				
+				if (rain.style.top >= "900px") {
+					clearInterval(timer);
+					rain.parentNode.removeChild(rain);
+				}
+			}, 4)
+		}, 8)
+		
+	</script>
+</body>
+</html>
