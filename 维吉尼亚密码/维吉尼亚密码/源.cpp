@@ -1,26 +1,26 @@
 #include <stdio.h>
 #include <windows.h>
-#include "Vigen¨¨reCipher.h"
+#include "VigenÃ¨reCipher.h"
 
 /*
- * Î¬¼ªÄáÑÇÃÜÂëµÄ¼ÓÃÜÓë½âÃÜ½»»¥½çÃæ
+ * ç»´å‰å°¼äºšå¯†ç çš„åŠ å¯†ä¸è§£å¯†äº¤äº’ç•Œé¢
  * @Author SnhAenIgseAl
  * @Date 2022.11.12
  */
 
 int main()
 {
-	char src[MAXSIZE];		//ÃÜÎÄ»òÃ÷ÎÄ
-	char key[MAXSIZE];		//ÃÜÔ¿
-	int choose;				//²Ù×÷Ñ¡Ïî
+	char src[MAXSIZE];		//å¯†æ–‡æˆ–æ˜æ–‡
+	char key[MAXSIZE];		//å¯†é’¥
+	int choose;			//æ“ä½œé€‰é¡¹
 
 	do
 	{
-		printf("ÇëÊäÈëÃÜÎÄ»òÃ÷ÎÄ£º");
+		printf("è¯·è¾“å…¥å¯†æ–‡æˆ–æ˜æ–‡ï¼š");
 		scanf_s("%s", src, MAXSIZE);
-		printf("ÇëÊäÈëÃÜÔ¿£º");
+		printf("è¯·è¾“å…¥å¯†é’¥ï¼š");
 		scanf_s("%s", key, MAXSIZE);
-		printf("ÇëÊäÈë²Ù×÷Ñ¡Ïî£º\n1.¼ÓÃÜ\t2.½âÃÜ\t3.ÍË³ö\n");
+		printf("è¯·è¾“å…¥æ“ä½œé€‰é¡¹ï¼š\n1.åŠ å¯†\t2.è§£å¯†\t3.é€€å‡º\n");
 		scanf_s("%d", &choose);
 
 		switch (choose)
@@ -34,7 +34,7 @@ int main()
 				break;
 
 			default:
-				printf("²Ù×÷Ñ¡Ïî²»´æÔÚ\n");
+				printf("æ“ä½œé€‰é¡¹ä¸å­˜åœ¨\n");
 				break;
 		}
 	} while (choose != 3);
