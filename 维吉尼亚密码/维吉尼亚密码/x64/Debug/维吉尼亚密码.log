@@ -1,0 +1,6 @@
+﻿  源.cpp
+E:\网抑云Time\C\维吉尼亚密码\维吉尼亚密码\VigenèreCipher.h(25,29): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\网抑云Time\C\维吉尼亚密码\维吉尼亚密码\VigenèreCipher.h(26,29): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\网抑云Time\C\维吉尼亚密码\维吉尼亚密码\VigenèreCipher.h(72,29): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\网抑云Time\C\维吉尼亚密码\维吉尼亚密码\VigenèreCipher.h(73,29): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  维吉尼亚密码.vcxproj -> E:\网抑云Time\C\维吉尼亚密码\x64\Debug\维吉尼亚密码.exe
