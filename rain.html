@@ -40,9 +40,9 @@
 				var k = 1;
 				k++;
 				
-				rain.style.top = height + 5 * Math.pow(k, 2) + "px";
+				rain.style.top = height + Math.pow(k, 1.5) + "%";
 				
-				if (parseInt(rain.style.top) >= 900) {
+				if (parseInt(rain.style.top) >= 100) {
 					clearInterval(timer);
 					rain.parentNode.removeChild(rain);
 				}
