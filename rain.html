@@ -43,7 +43,7 @@
 				
 				rain.style.top = height + 5 * Math.pow(k, 2) + "px";
 				
-				if (rain.style.top >= "900px") {
+				if (parseInt(rain.style.top) >= 900) {
 					clearInterval(timer);
 					rain.parentNode.removeChild(rain);
 				}
