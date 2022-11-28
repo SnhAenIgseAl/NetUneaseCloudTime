@@ -4,7 +4,7 @@
 #include "AddressBook.h"
 
 /*
-* Í¨Ñ¶Â¼¹ÜÀíÏµÍ³½»»¥½çÃæ
+* é€šè®¯å½•ç®¡ç†ç³»ç»Ÿäº¤äº’ç•Œé¢
 *
 * @Author SnhAenIgseAl
 * @Date 2022.11.28
@@ -16,43 +16,43 @@ int main()
 	struct Person person;
 	struct PersonNode* P = initPerson();
 
-	char name[MAX_NAME_LEN];		//ĞÕÃû
-	char sex[3];					//ĞÔ±ğ
-	int age;						//ÄêÁä
-	char phone[15];					//µç»°
-	char address[MAX_NAME_LEN];		//×¡Ö·
-	int choose;						//²Ù×÷Ñ¡Ïî
+	char name[MAX_NAME_LEN];		//å§“å
+	char sex[3];				//æ€§åˆ«
+	int age;				//å¹´é¾„
+	char phone[15];				//ç”µè¯
+	char address[MAX_NAME_LEN];		//ä½å€
+	int choose;				//æ“ä½œé€‰é¡¹
 
-	//¸ßÖĞÍæµÄºÃµÄ¼ÒÈËÃÇ
-	person = { "·ëË®Ë®", "Å®", 24, "²»ÖªµÀ", "²»ÖªµÀ" };
+	//é«˜ä¸­ç©çš„å¥½çš„å®¶äººä»¬
+	person = { "å†¯æ°´æ°´", "å¥³", 24, "ä¸çŸ¥é“", "ä¸çŸ¥é“" };
 	addPerson(P, person);
-	person = { "°¢ÓÎ", "Å®", 21, "²»ÖªµÀ", "²»ÖªµÀ" };
+	person = { "é˜¿æ¸¸", "å¥³", 21, "ä¸çŸ¥é“", "ä¸çŸ¥é“" };
 	addPerson(P, person);
-	person = { "°¢Ç°", "Å®", 17, "²»ÖªµÀ", "²»ÖªµÀ" };
+	person = { "é˜¿å‰", "å¥³", 17, "ä¸çŸ¥é“", "ä¸çŸ¥é“" };
 	addPerson(P, person);
-	person = { "PDD", "Å®", 19, "²»ÖªµÀ", "²»ÖªµÀ" };
+	person = { "PDD", "å¥³", 19, "ä¸çŸ¥é“", "ä¸çŸ¥é“" };
 	addPerson(P, person);
-	person = { "°¢Éß", "Å®", 18, "²»ÖªµÀ", "²»ÖªµÀ" };
+	person = { "é˜¿è›‡", "å¥³", 18, "ä¸çŸ¥é“", "ä¸çŸ¥é“" };
 	addPerson(P, person);
-	person = { "°¢Ìï", "Å®", 17, "²»ÖªµÀ", "²»ÖªµÀ" };
+	person = { "é˜¿ç”°", "å¥³", 17, "ä¸çŸ¥é“", "ä¸çŸ¥é“" };
 	addPerson(P, person);
-	person = { "°¢ºÀ", "Å®", 18, "²»ÖªµÀ", "²»ÖªµÀ" };
+	person = { "é˜¿è±ª", "å¥³", 18, "ä¸çŸ¥é“", "ä¸çŸ¥é“" };
 	addPerson(P, person);
-	person = { "°¢Åô", "Å®", 19, "²»ÖªµÀ", "²»ÖªµÀ" };
+	person = { "é˜¿é¹", "å¥³", 19, "ä¸çŸ¥é“", "ä¸çŸ¥é“" };
 	addPerson(P, person);
 
-	printf("--------------------------------------SnhAenIgseAlµÄÍ¨Ñ¶Â¼--------------------------------------\n");
+	printf("--------------------------------------SnhAenIgseAlçš„é€šè®¯å½•--------------------------------------\n");
 	printPersonList(P);
 	do
 	{
-		printf("ÇëÊäÈë²Ù×÷Ñ¡Ïî£º\n");
-		printf("1.Ìí¼ÓĞÅÏ¢\n");
-		printf("2.°´ĞÕÃûÉ¾³ıĞÅÏ¢\n");
-		printf("3.°´ĞÕÃû¸ü¸ÄĞÅÏ¢\n");
-		printf("4.°´ĞÕÃû²éÑ¯ĞÅÏ¢\n");
-		printf("5.´òÓ¡Í¨Ñ¶Â¼ÁĞ±í£º\n");
-		printf("6.É¾³ıËùÓĞÁªÏµÈË£º\n");
-		printf("7.ÍË³ö\n");
+		printf("è¯·è¾“å…¥æ“ä½œé€‰é¡¹ï¼š\n");
+		printf("1.æ·»åŠ ä¿¡æ¯\n");
+		printf("2.æŒ‰å§“ååˆ é™¤ä¿¡æ¯\n");
+		printf("3.æŒ‰å§“åæ›´æ”¹ä¿¡æ¯\n");
+		printf("4.æŒ‰å§“åæŸ¥è¯¢ä¿¡æ¯\n");
+		printf("5.æ‰“å°é€šè®¯å½•åˆ—è¡¨ï¼š\n");
+		printf("6.åˆ é™¤æ‰€æœ‰è”ç³»äººï¼š\n");
+		printf("7.é€€å‡º\n");
 		line();
 
 		scanf_s("%d", &choose);
@@ -60,26 +60,26 @@ int main()
 		switch (choose)
 		{
 			case 1:
-				printf("ÇëÊäÈëĞÕÃû¡¢ĞÔ±ğ¡¢ÄêÁä¡¢µç»°¡¢×¡Ö·£º\n");
+				printf("è¯·è¾“å…¥å§“åã€æ€§åˆ«ã€å¹´é¾„ã€ç”µè¯ã€ä½å€ï¼š\n");
 				scanf_s("%s %s %d %s %s", person.name, MAX_NAME_LEN, person.sex, 3, &person.age, person.phone, 12, person.address, MAX_NAME_LEN);
 				addPerson(P, person);
 				printPersonList(P);
 				break;
 
 			case 2:
-				printf("ÇëÊäÈëÒªÉ¾³ıµÄĞÅÏ¢µÄĞÕÃû£º");
+				printf("è¯·è¾“å…¥è¦åˆ é™¤çš„ä¿¡æ¯çš„å§“åï¼š");
 				scanf_s("%s", name, MAX_NAME_LEN);
 				deletePersonByName(P, name);
 				break;
 
 			case 3:
-				printf("ÇëÊäÈëÒª¸ü¸ÄºóµÄĞÕÃû¡¢ĞÔ±ğ¡¢ÄêÁä¡¢µç»°¡¢×¡Ö·£º\n");
+				printf("è¯·è¾“å…¥è¦æ›´æ”¹åçš„å§“åã€æ€§åˆ«ã€å¹´é¾„ã€ç”µè¯ã€ä½å€ï¼š\n");
 				scanf_s("%s %s %d %s %s", name, MAX_NAME_LEN, sex, 3, &age, phone, 12, address, MAX_NAME_LEN);
 				changePersonByName(P, name, sex, age, phone, address);
 				break;
 
 			case 4:
-				printf("ÇëÊäÈëÒª²éÕÒµÄĞÅÏ¢µÄĞÕÃû£º");
+				printf("è¯·è¾“å…¥è¦æŸ¥æ‰¾çš„ä¿¡æ¯çš„å§“åï¼š");
 				scanf_s("%s", name, MAX_NAME_LEN);
 				selectPersonByName(P, name);
 				break;
@@ -97,7 +97,7 @@ int main()
 				break;
 
 			default:
-				printf("ÊäÈëµÄ²Ù×÷Ñ¡Ïî²»´æÔÚ\n");
+				printf("è¾“å…¥çš„æ“ä½œé€‰é¡¹ä¸å­˜åœ¨\n");
 				line();
 				printf("\n");
 				break;
