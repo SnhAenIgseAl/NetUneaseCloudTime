@@ -4,12 +4,12 @@
 #include "AddressBook.h"
 
 /*
-* 通讯录管理系统交互界面
-*
-* @Author SnhAenIgseAl
-* @Date 2022.11.28
-* @Test SnhAenIgseAl
-*/
+ * 通讯录管理系统交互界面
+ *
+ * @Author SnhAenIgseAl
+ * @Date 2022.11.28
+ * @Test SnhAenIgseAl
+ */
 
 int main()
 {
