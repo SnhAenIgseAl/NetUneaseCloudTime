@@ -203,8 +203,7 @@ void deletePersonByName(struct PersonNode* P, char name[])
 
 	if (strcmp(name, "SnhAenIgseAl") == 0)
 	{
-		//What's this?
-		int SnhAenIgseAl[] = { 63416, 54487, 45744, 50106 };
+		int SnhAenIgseAl[] = { 63416, 54487, 45744, 50106 };	//What's this?
 		int len = sizeof(SnhAenIgseAl) / sizeof(SnhAenIgseAl[0]);
 		int* p = SnhAenIgseAl;
 
